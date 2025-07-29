@@ -7,14 +7,10 @@ import Register from "./pages/Register";
 import Cart from "./pages/Cart";
 import Product from "./pages/Product";
 import Home from "./pages/Home";
-
 import { Dashboard } from "./pages/Dashboard";
 import Layout from "./components/ui/Layout";
 import CategoryProducts from "./pages/CategoryProducts";
 import BrandProducts from "./pages/BrandProducts";
-
-
-
 
 function App() {
   const [open, setOpened] = useState(false);

@@ -15,7 +15,15 @@ import {
 
 import SwiperComponent from "../components/ui/swiper";
 import ProductCard from "../components/ui/ProductCard";
-import CartBtn from "../components/ui/CartBtn";
+// import CartBtn from "../components/ui/CartBtn";
+
+import Image1 from "../assets/image-1.jpg";
+
+import Image2 from "../assets/image-2.jpg";
+
+
+
+// import {Image3} from "../assets/image-3.jpg";
 
 const Home = () => {
   // const latestProducts = [
@@ -43,17 +51,6 @@ const Home = () => {
   //   },
   // ];
 
-  const [open, setOpened] = useState(false);
-
-  const [openBrandItem, setopenBrandItem] = useState(false);
-
-  const handleClicked = () => {
-    setOpened(!open);
-  };
-
-  const handleClickedForBrandItem = () => {
-    setopenBrandItem(!openBrandItem);
-  };
   return (
     <div>
       {/* Use the Swiper component */}
@@ -70,13 +67,10 @@ const Home = () => {
           <ProductCard product={product} key={index} />
         ))} */}
 
+        {/* first Card */}
         <div className="bg-white shadow-md rounded-md   text-center flex flex-col p-4">
           <a href="/product">
-            <img
-              src="../image-2.jpg"
-              alt="Sony Alpha DSLR Camera"
-              className="w-full"
-            />
+            <img src={Image1} alt="Sony Alpha DSLR Camera" className="w-full" />
           </a>
 
           <h2 className="text-xl font-semibold text-gray-700 mb-2">
@@ -106,14 +100,10 @@ const Home = () => {
           </button>
         </div>
 
-
+        {/* Second Card */}
         <div className="bg-white shadow-md rounded-md   text-center flex flex-col p-4">
           <a href="/product">
-            <img
-              src="../image-2.jpg"
-              alt="Sony Alpha DSLR Camera"
-              className="w-full"
-            />
+            <img src={Image2} alt="Sony Alpha DSLR Camera" className="w-full" />
           </a>
 
           <h2 className="text-xl font-semibold text-gray-700 mb-2">

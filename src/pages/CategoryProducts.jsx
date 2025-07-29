@@ -1,5 +1,11 @@
 import React from "react";
 
+
+
+import Image1 from "../assets/image-1.jpg";
+
+import Image2 from "../assets/image-2.jpg";
+
 const CategoryProducts = () => {
   return (
     <>
@@ -7,7 +13,7 @@ const CategoryProducts = () => {
         <div className="bg-white shadow-md rounded-md   text-center flex flex-col p-4">
           <a href="/product">
             <img
-              src="../image-2.jpg"
+              src={Image1}
               alt="Sony Alpha DSLR Camera"
               className="w-full"
             />
@@ -43,7 +49,7 @@ const CategoryProducts = () => {
         <div className="bg-white shadow-md rounded-md   text-center flex flex-col p-4">
           <a href="/product">
             <img
-              src="../image-2.jpg"
+              src={Image2}
               alt="Sony Alpha DSLR Camera"
               className="w-full"
             />

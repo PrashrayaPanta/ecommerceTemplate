@@ -12,8 +12,9 @@ import {
   } from "@/components/ui/sheet";
 import { Link } from "react-router-dom";
 import Star from "../components/ui/Star";
-import CartBtn from "../components/ui/CartBtn";
 
+
+import Image2 from "../assets/image-2.jpg";
 
 const Product = () => {
 
@@ -34,8 +35,8 @@ const Product = () => {
                 <div class="lg:w-5/12 bg-red-400">
                     <div class="mb-4 border-2 border-gray-200 rounded-xl overflow-hidden">
 
-                      {/* <img src="../image-1.jpg" alt="" srcset="" /> */}
-                        <div className="border-2 border-dashed rounded-xl w-full h-96 bg-[url(../image-1.jpg)] bg-cover bg-no-repeat   hover:cursor-zoom-in hover:bg-size-[150%]" style={{backgroundPosition:"center"}}></div>
+                      <img src={Image2} alt="" srcset="" className="h-100 object-cover w-full" />
+                        {/* <div className="border-2 border-dashed rounded-xl w-full h-96 bg-[url('../assets/image-1.jpg')] bg-cover bg-no-repeat   hover:cursor-zoom-in hover:bg-size-[150%]" style={{backgroundPosition:"center"}}></div> */}
                     </div>
                     {/* <div class="grid grid-cols-4 gap-2">
                         <div class="cursor-pointer border-2 border-gray-200 rounded-lg overflow-hidden hover:border-alien-green transition" 
